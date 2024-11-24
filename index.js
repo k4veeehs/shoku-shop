@@ -12,3 +12,17 @@ hamburger.addEventListener('click', () => {
         menuOpen = false;
     }
 });
+
+document.querySelector('.shop-all').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.querySelector('#products').scrollIntoView({ 
+        behavior: 'smooth'
+    });
+});
+
+document.querySelector('.back-to-top').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.querySelector('#welcome-again').scrollIntoView({ 
+        behavior: 'smooth'
+    });
+});
